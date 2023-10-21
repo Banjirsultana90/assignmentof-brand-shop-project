@@ -1,0 +1,209 @@
+
+     [
+      
+       
+          { "brandName": "L'Oréal",
+            "image": "https://i.ibb.co/gZbCJRB/loreallips.jpg",
+            "name": "Lipstick",
+            "type": "Cosmetics",
+            "price": "$19.99",
+            "rating": 4.5,
+            "details": "L'Oréal lipstick offers a wide spectrum of shades to complement every style, delivering vibrant, long-lasting color. Its smooth application and moisture-rich formula keep your lips looking and feeling beautiful all day."
+          },
+          { "brandName": "L'Oréal",
+            "image": "https://i.ibb.co/7SJ4f5C/loreal-conc.jpg",
+            "name": "Concealer",
+            "type": "Cosmetics",
+            "price": "$24.99",
+            "rating": 4.2,
+            "details": "L'Oreal concealer provides flawless coverage for imperfections, dark circles, and blemishes, leaving your skin with a natural, radiant finish. With a lightweight and blendable formula, it's your secret to a perfectly refreshed complexion."
+          },
+          { "brandName": "L'Oréal",
+            "image": "https://i.ibb.co/mS5NpSt/loreal-eyesh.jpg",
+            "name": "Eyeshadow",
+            "type": "Cosmetics",
+            "price": "$18.99",
+            "rating": 4.7,
+            "details": "L'Oreal eyeshadows redefine your eye makeup with a spectrum of colors and textures, allowing endless creativity in your look. Achieve stunning, smudge-free, and long-lasting eye designs with these richly pigmented shades."
+          },
+          { "brandName": "L'Oréal",
+            "image": "https://i.ibb.co/GQr5fzW/722beacd70c5344cadc5bf4a2f6f1cd6.jpg",
+            "name": "Nailpolish",
+            "type": "Cosmetics",
+            "price": "$22.99",
+            "rating": 4.6,
+            "details": "L'Oréal nail polish collection delivers vibrant, chip-resistant colors that add a touch of edgy glamour to your nails. Unleash your creativity and showcase your unique style with every stroke."
+          }
+        ,
+        
+          {"brandName": "Estée Lauder",
+            "image": "https://i.ibb.co/K25bJzw/es-serum.jpg",
+            "name": "Night Serum",
+            "type": "Skincare",
+            "price": "$49.99",
+            "rating": 4.8,
+            "details": "Estée Lauder's night serum rejuvenates your skin while you sleep, diminishing the signs of aging and leaving you with a radiant morning glow. Experience the luxury of waking up to revitalized, youthful-looking skin."
+          },
+          {"brandName": "Estée Lauder",
+            "image": "https://i.ibb.co/1TdmDt0/es-found.jpg",
+            "name": "Foundation",
+            "type": "Cosmetics",
+            "price": "$55.99",
+            "rating": 4.7,
+            "details": " Estée Lauder's foundation offers flawless coverage and a lightweight feel, creating a radiant complexion that lasts all day. Experience the confidence of naturally beautiful skin."
+          },
+          {"brandName": "Estée Lauder",
+            "image": "https://i.ibb.co/6ZBk3rm/es-clean.jpg",
+            "name": "Cleanser",
+            "type": "Skincare",
+            "price": "$42.99",
+            "rating": 4.9,
+            "details": "Estée Lauder's cleanser gently purifies your skin, removing impurities and makeup, leaving it refreshed and revitalized. Start and end your day with a clean, glowing canvas."
+          },
+          {"brandName": "Estée Lauder",
+            "image": "https://i.ibb.co/2KXjL7f/es-lip.jpg",
+            "name": "Lipstick",
+            "type": "Cosmetics",
+            "price": "$47.99",
+            "rating": 4.6,
+            "details": "Estée Lauder lipstick offers a wide spectrum of shades to complement every style, delivering vibrant, long-lasting color. Its smooth application and moisture-rich formula keep your lips looking and feeling beautiful all day."
+          }
+        ,
+          {"brandName": "Chanel",
+            "image": "https://i.ibb.co/GR0jSfb/ch-mas.jpg",
+            "name": "Maskara",
+            "type": "Cosmetics",
+            "price": "$89.99",
+            "rating": 4.7,
+            "details": "Chanel's mascara accentuates your lashes with bold volume and definition, delivering a striking, wide-eyed look that lasts. Elevate your beauty routine with a touch of timeless elegance."
+          },
+          {"brandName": "Chanel",
+            "image": "https://i.ibb.co/vmb8NfP/ch-per.jpg",
+            "name": "Perfume",
+            "type": "Fragrance",
+            "price": "$76.99",
+            "rating": 4.6,
+            "details": "Chanel perfumes offer an enchanting blend of captivating scents, evoking elegance and sophistication. Each fragrance is crafted to leave a lasting impression, accentuating your personal style with a touch of luxury."
+          },
+          {"brandName": "Chanel",
+            "image": "https://i.ibb.co/5FxPr8Y/ch-nail.jpg",
+            "name": "Nailpolish",
+            "type": "Cosmetics",
+            "price": "$95.99",
+            "rating": 4.8,
+            "details": "chanel nail polish collection delivers vibrant, chip-resistant colors that add a touch of edgy glamour to your nails. Unleash your creativity and showcase your unique style with every stroke."
+          },
+          {"brandName": "Chanel",
+            "image": "https://i.ibb.co/4Y2qnQC/ch-face.jpg",
+            "name": "Cleanser",
+            "type": "skincare",
+            "price": "$82.99",
+            "rating": 4.5,
+            "details": "Chanel cleanser gently purifies your skin, removing impurities and makeup, leaving it refreshed and revitalized. Start and end your day with a clean, glowing canvas."
+          },
+    
+          {"brandName": "Dior",
+            "image": "https://i.ibb.co/TkDMKd5/dior-br.jpg",
+            "name": "Bronzer",
+            "type": "Cosmetics",
+            "price": "$23.99",
+            "rating": 4.4,
+            "details": "Dior's bronzer imparts a sun-kissed glow to your complexion, creating a luminous and healthy radiance. Elevate your makeup routine with a touch of luxury and a natural-looking tan that lasts all day."
+          },
+          {"brandName": "Dior",
+            "image": "https://i.ibb.co/8Ms8Gz4/dior-gloss.jpg",
+            "name": "Lipgloss",
+            "type": "Cosmetics",
+            "price": "$21.99",
+            "rating": 4.6,
+            "details": "Dior lip gloss adds a brilliant, high-shine finish to your lips, enhancing your natural beauty with a touch of glamour. Experience luscious, irresistibly glossy lips in one smooth swipe."
+          },
+          {"brandName": "Dior",
+            "image": "https://i.ibb.co/rc3JGQH/dior-per.jpg",
+            "name": "Perfume",
+            "type": "Fragence",
+            "price": "$26.99",
+            "rating": 4.7,
+            "details": "Dior perfumes offer an enchanting blend of captivating scents, evoking elegance and sophistication. Each fragrance is crafted to leave a lasting impression, accentuating your personal style with a touch of luxury."
+          },
+          {"brandName": "Dior",
+            "image": "https://i.ibb.co/JCqvh8L/dior-brush.jpg",
+            "name": "Makeup Brush",
+            "type": " Makeup",
+            "price": "$28.99",
+            "rating": 4.3,
+            "details": " Dior makeup brush collection features luxurious, precision-crafted tools that effortlessly enhance your makeup application. Achieve a flawless, professional finish with the touch of elegance that Chanel is known for."
+          }
+        ,
+       
+          {"brandName": "Urban Decay",
+            "image": "https://i.ibb.co/TvtpWSC/urban-conc.jpg",
+            "name": "Concealer",
+            "type": "Cosmetics",
+            "price": "$29.99",
+            "rating": 4.5,
+            "details": "Urban Decay concealer provides flawless coverage for imperfections, dark circles, and blemishes, leaving your skin with a natural, radiant finish. With a lightweight and blendable formula, it's your secret to a perfectly refreshed complexion."
+          },
+          {"brandName": "Urban Decay",
+            "image": "https://i.ibb.co/N9ScV0S/urban-eyeliner.jpg",
+            "name": "Eyeliner",
+            "type": "Makeup",
+            "price": "$27.99",
+            "rating": 4.4,
+            "details": "Urban Decay's eye liner defines your eyes with precision and intensity, offering bold, smudge-proof color for a dramatic, all-day look. Elevate your eye makeup game with ease and style."
+          },
+          {"brandName": "Urban Decay",
+            "image": "https://i.ibb.co/1dVD8rp/urban-shadow.jpg",
+            "name": "shadow",
+            "type": "Makeup",
+            "price": "$31.99",
+            "rating": 4.3,
+            "details": "Urban Decay eyeshadows redefine your eye makeup with a spectrum of colors and textures, allowing endless creativity in your look. Achieve stunning, smudge-free, and long-lasting eye designs with these richly pigmented shades."
+          },
+          {"brandName": "Urban Decay",
+            "image": "https://i.ibb.co/XFrYSFw/urban-setting.jpg",
+            "name": "Setting spray",
+            "type": "Makeup",
+            "price": "$26.99",
+            "rating": 4.6,
+            "details": "Urban Decay's setting spray locks in your makeup for all-day wear, ensuring a flawless, long-lasting look. Say goodbye to touch-ups and hello to a fresh, matte finish."
+          },
+        
+        
+          {"brandName": "Revlon",
+            "image": "https://i.ibb.co/jbnd5NY/rev-sham.jpg",
+            "name": "Shampoo",
+            "type": "Cosmetics",
+            "price": "$17.99",
+            "rating": 4.2,
+            "details": "Revlon shampoo cleanses and revitalizes your hair, leaving it silky-smooth and full of natural shine. Enjoy a fresh, invigorating haircare experience every day."
+          },
+          {"brandName": "Revlon",
+            "image": "https://i.ibb.co/YkCDkm3/rev-cond.jpg",
+            "name": "Conditioner",
+            "type": "Cosmetics",
+            "price": "$18.99",
+            "rating": 4.4,
+            "details": "Revlon conditioner deeply nourishes and repairs your hair, providing essential hydration and softness. It's your secret to manageable, beautifully conditioned locks."
+          },
+          {"brandName": "Revlon",
+            "image": "https://i.ibb.co/D9D6VL0/rev-per.jpg",
+            "name": "Perfume",
+            "type": "Fragence",
+            "price": "$15.99",
+            "rating": 4.1,
+            "details": "Revlon perfumes offer an enchanting blend of captivating scents, evoking elegance and sophistication. Each fragrance is crafted to leave a lasting impression, accentuating your personal style with a touch of luxury."
+          },
+          {"brandName": "Revlon",
+            "image": "https://i.ibb.co/3fy88Ly/rev-lip.jpg",
+            "name": "Lipstick",
+            "type": "Cosmetics",
+            "price": "$19.99",
+            "rating": 4.3,
+            "details": "Revlon lipstick offers a wide spectrum of shades to complement every style, delivering vibrant, long-lasting color. Its smooth application and moisture-rich formula keep your lips looking and feeling beautiful all day."
+          }
+        ]
+      
+    
+  
+  

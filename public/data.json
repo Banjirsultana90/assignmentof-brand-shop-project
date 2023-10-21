@@ -1,0 +1,41 @@
+ [
+      {
+        "id": "1",
+        "image": "https://i.ibb.co/pf6HqwR/336516cb16b321769b58db9a3d74587c.jpg",
+        "brandName": "L'Oréal"
+        
+      },
+      {
+        "id": "2",
+        "image": "https://i.ibb.co/K7VrTDB/335be9a83f990e128fdc5fa3ef48b69f.jpg",
+        "brandName": "Estée Lauder"
+        
+      },
+      {
+        "id": "3",
+        "image": "https://i.ibb.co/TWkSNj4/f0b6adff05465af437819794c6a42f2d.gif",
+        "brandName": "Chanel"
+       
+      },
+      {
+        "id": "4",
+       
+        "image": "https://i.ibb.co/72VNjsn/676b954fcd341353f5f25a3ebdff60b5.jpg",
+        "brandName": "Dior"
+       
+      },
+      {
+        "id": "5",
+        "image": "https://i.ibb.co/LdzmwGC/11dc8814a074a72bba6c606dd8278209.jpg",
+        "brand": "Urban Decay"
+        
+      },
+      {
+        "id": "6",
+        "image": "https://i.ibb.co/7Rz45DN/e458c27dd15d5f97d8468f920c41c031.jpg",
+        "brandName": " Revlon"
+        
+      }
+    ]
+  
+  
