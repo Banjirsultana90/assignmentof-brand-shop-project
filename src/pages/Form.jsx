@@ -1,10 +1,6 @@
 import React from 'react';
 
-
-
-
-
-const Addproduct = () => {
+const Form = () => {
     return (
         <div>
             <div className='bg-[#F4F3F0] p-24'>
@@ -98,4 +94,4 @@ const Addproduct = () => {
     );
 };
 
-export default Addproduct;
+export default Form;

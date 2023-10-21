@@ -67,6 +67,7 @@ const Allbrands = () => {
                                     <Link to={`/product/${brandName}/${product._id}`}>
                                         <button className="btn btn-primary">Details</button>
                                     </Link>
+                                    <Link></Link>
                                     <button className="btn btn-primary">Update</button>
                                 </div>
                             </div>

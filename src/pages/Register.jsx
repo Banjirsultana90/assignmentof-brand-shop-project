@@ -15,7 +15,7 @@ const Register = () => {
         const email = form.get('email');
         const password = form.get('password');
         // console.log(name,photo,email,password );
-        if (!/^(?!.*[A-Z])(?!.*[@#$%^&*()_+{}\[\]:;<>,.?~\\/]).{1,5}$/.test(password)) {
+        if (!/^(?=.*[A-Z])(?=.*[\W_]).{6,}$/.test(password)) {
             toast.error('Password should be less than 6 characters, no uppercase letters, and no special characters.');
             return;
         }

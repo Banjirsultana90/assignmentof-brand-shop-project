@@ -18,6 +18,8 @@ import Allbrands from './components/All/Allbrands.jsx';
 import Productdetails from './components/routes/Productdetails.jsx';
 import Privateroute from './components/routes/Privateroute.jsx';
 import AuthProvider from './components/provider/AuthProvider.jsx';
+import Mycart from './pages/Mycart.jsx';
+import Form from './pages/Form.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -41,6 +43,16 @@ const router = createBrowserRouter([
     {
       path: '/register',
       element: <Register></Register>
+    },
+    { 
+      path:'/mycart',
+      element:<Mycart></Mycart>
+
+    },
+    {
+      path:'/update',
+      element:<Form></Form>
+
     },
     {
       path: '/products',
