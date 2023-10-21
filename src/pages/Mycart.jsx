@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 import { useLoaderData } from 'react-router-dom';
 
 const Mycart = () => {
     const loadeduser = useLoaderData()
+    const[user, setuser]=useState(loadeduser)
+    const handledelete=id=>{
+        fetch(`http://localhost:5000/cart/${id}`,{
+            method: "DELETE"
+        })
+        .then((res)=>res.json())
+        .then((data)=>{
+            if(data.deletedcount>0){
+                toast.success('data deleted successfully')
+                const remaining=user.filter(auser=>auser._id !==id)
+                setuser(remaining)
+            }
+        })
+    }
     return (
-        <><h3>user :{loadeduser.length}</h3><div className="overflow-x-auto">
+        <><div className="overflow-x-auto">
             <table className="table table-xs">
                 <thead>
                     <tr>
@@ -28,7 +43,7 @@ const Mycart = () => {
                         <td>{user.price}</td>
                         <td>{user.rating}</td>
                         <td>{user.details}</td>
-                        <td><button className='btn'>Delete</button></td>
+                        <td><button onClick={()=>handledelete(user._id)} className='btn'>Delete</button></td>
                         
                     </tr>
                     )}
@@ -41,6 +56,7 @@ const Mycart = () => {
                 </tbody>
 
             </table>
+            <Toaster />
         </div></>
     );
 };

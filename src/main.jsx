@@ -51,8 +51,9 @@ const router = createBrowserRouter([
 
     },
     {
-      path:'/update',
-      element:<Form></Form>
+      path:'update/:id',
+      element:<Form></Form>,
+      loader:({params})=>fetch(`http://localhost:5173/product/${params.id}`)
 
     },
     {

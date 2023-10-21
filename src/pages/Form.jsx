@@ -1,6 +1,10 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 
 const Form = () => {
+    // const updateduser=useLoaderData()
+
+    
     return (
         <div>
             <div className='bg-[#F4F3F0] p-24'>

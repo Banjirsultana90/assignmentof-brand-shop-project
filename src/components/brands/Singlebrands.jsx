@@ -7,9 +7,9 @@ const Singlebrands = ({ brands }) => {
 
     return (
         <Link to={`/products/${brandName}`}>
-            <div className="card card-compact w-96 bg-base-100 shadow-xl">
+            <div className="card card-compact w-96 h-72 bg-base-100 shadow-xl">
                 <figure>
-                    <img src={image} className="h-48 w-full" alt={brandName} />
+                    <img   className="h-48 w-full" src={image} alt={brandName} />
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">{brandName}</h2>

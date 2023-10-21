@@ -8,7 +8,8 @@ import img2 from '../../assets/collection-small-perfume-bottles.jpg'
 import img3 from '../../assets/view-arrangement-with-make-up-brushes.jpg'
 
 const Allbrands = () => {
-    const { brandName } = useParams();
+    
+    const { brandName,_id } = useParams();
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
@@ -56,7 +57,7 @@ const Allbrands = () => {
                     <li key={product._id}>
                         <div className="card card-compact w-96 bg-base-100 shadow-xl">
                             <figure>
-                                <img src={product.image} alt={product.name} />
+                                <img className='h-64 w-full' src={product.image} alt={product.name} />
                             </figure>
                             <div className="card-body">
                                 <h2 className="card-title">{product.name}</h2>
@@ -67,7 +68,7 @@ const Allbrands = () => {
                                     <Link to={`/product/${brandName}/${product._id}`}>
                                         <button className="btn btn-primary">Details</button>
                                     </Link>
-                                    <Link to='/update'>
+                                    <Link to={`update/${_id}`}>
                                     <button className="btn btn-primary">Update</button></Link>
                                     
                                 </div>
