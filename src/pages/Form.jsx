@@ -85,7 +85,7 @@ const Form = () => {
 
                     </div>
 
-                    <input type="submit" value="Add Product" className="btn btn-block mt-3" />
+                    <input type="submit" value="Submit" className="btn btn-block mt-3" />
                 </form>
 
 

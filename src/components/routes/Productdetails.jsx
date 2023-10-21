@@ -9,8 +9,8 @@ const Productdetails = () => {
   const product = products.find((product) => product._id === _id);
 
   const handleAddToCart = async () => {
-   const {brandName,name,image,type,price}=product
-    const mydata={brandName,name,image,type,price}
+   const {brandName,name,image,type,price,rating,details}=product
+    const mydata={brandName,name,image,type,price,rating,details}
 
     fetch('http://localhost:5000/cart',{
         method:'POST',
