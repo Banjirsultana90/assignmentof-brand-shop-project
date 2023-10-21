@@ -9,7 +9,7 @@ import img3 from '../../assets/view-arrangement-with-make-up-brushes.jpg'
 
 const Allbrands = () => {
     
-    const { brandName,_id } = useParams();
+    const { brandName } = useParams();
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
@@ -68,7 +68,7 @@ const Allbrands = () => {
                                     <Link to={`/product/${brandName}/${product._id}`}>
                                         <button className="btn btn-primary">Details</button>
                                     </Link>
-                                    <Link to={`update/${_id}`}>
+                                    <Link to={`/update/${product._id}`}>
                                     <button className="btn btn-primary">Update</button></Link>
                                     
                                 </div>

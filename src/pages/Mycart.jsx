@@ -30,8 +30,6 @@ const Mycart = () => {
                         <th>price</th>
                         <th>rating</th>
                         <th>details</th>
-
-
                     </tr>
                 </thead>
                 <tbody>
@@ -47,11 +45,6 @@ const Mycart = () => {
                         
                     </tr>
                     )}
-
-
-
-
-
 
                 </tbody>
 

@@ -1,15 +1,50 @@
 import React from 'react';
+import toast from 'react-hot-toast';
+import { useLoaderData } from 'react-router-dom';
 
 
 
 
 
 const Addproduct = () => {
+   
+    // const {brandName,name,image,type,price,rating,details}=product
+    
+    
+    const handleadd= event => {
+        event.preventDefault();
+        const form =event.target
+        const name=form.name.value
+        const brandName=form.brandName.value
+        const image=form.image.value
+        const price=form.price.value
+        const rating=form.rating.value
+        const type=form.type.value
+        const details=form.details.value
+      const newproduct={name,brandName,image,price,rating,type,details,}
+    //   console.log(newproduct)
+        
+        
+     
+         fetch('http://localhost:5000/products',{
+             method:'POST',
+             headers:{
+               "content-type":'application/json'
+             },
+             body:JSON.stringify(newproduct)
+         })
+         .then(res=>res.json())
+         .then(value=>{
+             console.log(value)
+             if(value.modifiedcount>0)
+             toast.success("product updated")
+         })
+        }
     return (
         <div>
             <div className='bg-[#F4F3F0] p-24'>
 
-                <form >
+                <form  onSubmit={handleadd}>
                     <div className='flex gap-2'>
                         <div className="form-control md:w-full">
                             <label className="label">
@@ -35,7 +70,7 @@ const Addproduct = () => {
                                 <span className="label-text">Brand Name</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="brandname" placeholder="Available Brand" className="input input-bordered w-full" />
+                                <input type="text" name="brandName" placeholder="Available Brand" className="input input-bordered w-full" />
                             </label>
                         </div>
                     </div>
@@ -72,25 +107,16 @@ const Addproduct = () => {
                                 <span className="label-text">Short description</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="short description" placeholder="Coffee details" className="input input-bordered w-full" />
+                                <input type="text" name="details" placeholder="product details" className="input input-bordered w-full" />
                             </label>
                         </div>
 
                     </div>
-                    <div className='flex gap-2'>
-                        <div className="form-control md:w-full">
-                            <label className="label">
-                                <span className="label-text">Rating</span>
-                            </label>
-                            <label className="input-group">
-                                <input type="text" name="rating" placeholder="Rating" className="input input-bordered w-full" />
-                            </label>
-                        </div>
-
-                    </div>
+                    
 
                     <input type="submit" value="Add Product" className="btn btn-block mt-3" />
                 </form>
+                {/* <button onClick={handleadd} className='btn'>Add Product</button> */}
 
 
             </div>

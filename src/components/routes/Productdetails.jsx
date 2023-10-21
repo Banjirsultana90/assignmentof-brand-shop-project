@@ -1,5 +1,6 @@
 import React from 'react';
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
+
 import { useLoaderData, useParams } from 'react-router-dom';
 
 const Productdetails = () => {
@@ -22,6 +23,7 @@ const Productdetails = () => {
     .then(res=>res.json())
     .then(value=>{
         console.log(value)
+        toast.success("product added")
     })
     
   };
@@ -44,7 +46,7 @@ const Productdetails = () => {
       ) : (
         <p>Loading...</p>
       )}
-      <Toaster />
+      
     </div>
     
   );

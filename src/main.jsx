@@ -20,6 +20,7 @@ import Privateroute from './components/routes/Privateroute.jsx';
 import AuthProvider from './components/provider/AuthProvider.jsx';
 import Mycart from './pages/Mycart.jsx';
 import Form from './pages/Form.jsx';
+import { Toaster } from 'react-hot-toast';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -51,9 +52,9 @@ const router = createBrowserRouter([
 
     },
     {
-      path:'update/:id',
+      path:'/update/:id',
       element:<Form></Form>,
-      loader:({params})=>fetch(`http://localhost:5173/product/${params.id}`)
+      loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
 
     },
     {
@@ -83,5 +84,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthProvider>  <RouterProvider router={router} /></AuthProvider>
+    <Toaster />
   </React.StrictMode>,
 )
