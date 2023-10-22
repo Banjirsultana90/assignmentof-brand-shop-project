@@ -31,15 +31,15 @@ const Productdetails = () => {
   return (
     <div>
       {product ? (
-        <div className="card card-compact w-96 bg-base-100 shadow-xl">
+        <div className="card card-compact w-96   bg-base-100 shadow-xl">
           <figure>
-            <img src={product.image} alt={product.name} />
+            <img className='h-64 w-full' src={product.image} alt={product.name} />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">{product.name}</h2>
+            <h2 className="card-title text-blue-600 text-2xl font-extrabold">{product.name}</h2>
             <p>{product.details}</p>
           </div>
-          <button className="btn btn-primary" onClick={handleAddToCart}>
+          <button className="btn btn-secondary" onClick={handleAddToCart}>
             Add to Cart
           </button>
         </div>

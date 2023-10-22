@@ -32,7 +32,7 @@ const Addproduct = () => {
          .then(res=>res.json())
          .then(value=>{
              console.log(value)
-             if(value.insertedId>0)
+             if(value.insertedId)
              toast.success("product updated")
          })
         }
@@ -92,7 +92,7 @@ const Addproduct = () => {
                     <div className='flex gap-2'>
                         <div className="form-control md:w-1/2">
                             <label className="label">
-                                <span className="label-text">type</span>
+                                <span className="label-text">Type</span>
                             </label>
                             <label className="input-group">
                                 <input type="text" name="type" placeholder="product type" className="input input-bordered w-full" />

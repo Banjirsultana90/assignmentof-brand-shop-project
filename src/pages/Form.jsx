@@ -73,6 +73,15 @@ const Form = () => {
                     <div className='flex gap-2'>
                         <div className="form-control md:w-1/2">
                             <label className="label">
+                                <span className="label-text">Type</span>
+                            </label>
+                            <label className="input-group">
+                                <input type="text" name="type" placeholder="product type" defaultValue={type} className="input input-bordered w-full" />
+                            </label>
+                        </div>
+                    <div className='flex gap-2'>
+                        <div className="form-control md:w-1/2">
+                            <label className="label">
                                 <span className="label-text">Price</span>
                             </label>
                             <label className="input-group">
@@ -89,23 +98,15 @@ const Form = () => {
                         </div>
 
                     </div>
-                    <div className='flex gap-2'>
-                        <div className="form-control md:w-1/2">
-                            <label className="label">
-                                <span className="label-text">type</span>
-                            </label>
-                            <label className="input-group">
-                                <input type="text" name="type" placeholder="product type" defaultValue={type} className="input input-bordered w-full" />
-                            </label>
-                        </div>
-                        <div className="form-control md:w-1/2">
+                   
+                        {/* <div className="form-control md:w-1/2">
                             <label className="label">
                                 <span className="label-text">Short description</span>
                             </label>
                             <label className="input-group">
                                 <input type="text" name="details" placeholder="Coffee details" defaultValue={details} className="input input-bordered w-full" />
                             </label>
-                        </div>
+                        </div> */}
 
                     </div>
                     <input type="submit" value="Submit" className="btn btn-block mt-3" />

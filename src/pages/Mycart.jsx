@@ -11,7 +11,7 @@ const Mycart = () => {
         })
         .then((res)=>res.json())
         .then((data)=>{
-            if(data.deletedcount>0){
+            if(data.deletedCount>0){
                 toast.success('data deleted successfully')
                 const remaining=user.filter(auser=>auser._id !==id)
                 setuser(remaining)

@@ -31,7 +31,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <img className='w-10 h-10 rounded-full' src="/src/assets/download.jpg" alt="" />
-                <a className="btn btn-ghost normal-case text-xl">newMua</a>
+                <a className="btn btn-ghost normal-case text-xl text-fuchsia-600">new<span className='text-orange-500'>Mua</span></a>
                 
             </div>
             <div className="navbar-center hidden lg:flex">

@@ -8,9 +8,10 @@ import img2 from '../../assets/collection-small-perfume-bottles.jpg'
 import img3 from '../../assets/view-arrangement-with-make-up-brushes.jpg'
 
 const Allbrands = () => {
-    
+
     const { brandName } = useParams();
     const [products, setProducts] = useState([]);
+    const [noProducts, setNoProducts] = useState(false);
 
     useEffect(() => {
         fetch(`http://localhost:5000/products/`)
@@ -18,14 +19,21 @@ const Allbrands = () => {
             .then((data) => {
 
                 const filteredProducts = data.filter(product => product.brandName === brandName);
-                setProducts(filteredProducts);
+                // setProducts(filteredProducts);
+                if (filteredProducts.length === 0) {
+
+                    setNoProducts(true);
+                } else {
+                    setProducts(filteredProducts);
+                }
+
             })
             .catch((error) => console.error(error));
     }, [brandName]);
 
     return (
         <div >
-            <div>
+            <div className='mb-5'>
                 <div className="carousel w-full h-64">
                     <div id="slide1" className="carousel-item relative w-full">
                         <img src={img1} className="w-full" />
@@ -48,35 +56,44 @@ const Allbrands = () => {
                             <a href="#slide4" className="btn btn-circle">❯</a>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
-            <h2>Products for: {brandName}</h2>
-            <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'>
-                {products.map((product) => (
-                    <li key={product._id}>
-                        <div className="card card-compact w-96 bg-base-100 shadow-xl">
-                            <figure>
-                                <img className='h-64 w-full' src={product.image} alt={product.name} />
-                            </figure>
-                            <div className="card-body">
-                                <h2 className="card-title">{product.name}</h2>
-                                <h2>{product.brandName}</h2>
-                                <h2>{product.price}</h2>
-                                <h2>{product.rating}</h2>
-                                <div className="card-actions justify-end">
-                                    <Link to={`/product/${brandName}/${product._id}`}>
-                                        <button className="btn btn-primary">Details</button>
-                                    </Link>
-                                    <Link to={`/update/${product._id}`}>
-                                    <button className="btn btn-primary">Update</button></Link>
-                                    
+            <h3 className='text-3xl font-bold' >Prducts for:{brandName}</h3>
+            {noProducts ? (
+                <p className='text-5xl pt-10 py-5  text-red-500'>No available products for{brandName}!!!!</p>
+            ) : (
+                <ul className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'>
+                    {products.map((product) => (
+                        <li key={product._id}>
+                            <div className="card card-compact w-80 bg-red-50 shadow-xl">
+                                <figure>
+                                    <img className='h-44 w-full ' src={product.image} alt={product.name} />
+                                </figure>
+                                <div className="card-body">
+                                    <h2 className="card-title text-purple-600">{product.name}</h2>
+                                    <div className='flex justify-between text-lg font-medium'>
+                                        <h2>{product.brandName}</h2>
+                                        <h2>{product.price}</h2>
+                                    </div>
+                                    <div className='flex justify-between text-lg font-medium'>
+                                        <h2>{product.rating}</h2>
+                                        <h2>{product.type}</h2>
+                                    </div>
+                                    <div className="card-actions justify-between">
+                                        <Link to={`/product/${brandName}/${product._id}`}>
+                                            <button className="btn btn-primary">Details</button>
+                                        </Link>
+                                        <Link to={`/update/${product._id}`}>
+                                            <button className="btn btn-primary">Update</button></Link>
+
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                ))}
-            </ul>
+                        </li>
+                    ))}
+                </ul>
+            )}
         </div>
     );
 };
