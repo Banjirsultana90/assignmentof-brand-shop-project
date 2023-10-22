@@ -1,10 +1,6 @@
 import React from 'react';
-import toast from 'react-hot-toast';
+import toast, { Toaster } from 'react-hot-toast';
 import { useLoaderData } from 'react-router-dom';
-
-
-
-
 
 const Addproduct = () => {
    
@@ -36,7 +32,7 @@ const Addproduct = () => {
          .then(res=>res.json())
          .then(value=>{
              console.log(value)
-             if(value.modifiedcount>0)
+             if(value.insertedId>0)
              toast.success("product updated")
          })
         }
@@ -120,6 +116,7 @@ const Addproduct = () => {
 
 
             </div>
+            <Toaster />
         </div>
     );
 };

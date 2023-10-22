@@ -7,7 +7,8 @@ import { AuthContext } from '../provider/AuthProvider';
 const nav = <><li><NavLink to='/'>Home</NavLink></li>
     <li><NavLink to='/addproduct'>Add Product</NavLink></li>
     <li> <NavLink to='/mycart'>My Cart</NavLink></li>
-    <li><NavLink to='/login'>Login</NavLink></li></>
+    {/* <li><NavLink to='/login'>Login</NavLink></li> */}
+    </>
 
 
 const Navbar = () => {

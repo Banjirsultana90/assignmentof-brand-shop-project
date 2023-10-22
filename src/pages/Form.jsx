@@ -30,7 +30,7 @@ const Form = () => {
          .then(res=>res.json())
          .then(value=>{
              console.log(value)
-             if(value.modifiedcount>0)
+             if(value.modifiedCount>0)
              toast.success("product updated")
          })
    
