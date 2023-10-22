@@ -6,7 +6,7 @@ const Form = () => {
     const product=useLoaderData()
     const {id}=useParams()
     // console.log(id)
-    // console.log(product);
+    console.log(product);
     const {_id,brandName,name,image,type,price,rating,details}=product
     const handleupdate= event => {
         event.preventDefault();
@@ -47,7 +47,7 @@ const Form = () => {
                                 <span className="label-text">Image</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="image" placeholder="image url" className="input input-bordered w-full" />
+                                <input type="text" name="image" placeholder="image url" defaultValue={image} className="input input-bordered w-full" />
                             </label>
                         </div>
 
@@ -58,7 +58,7 @@ const Form = () => {
                                 <span className="label-text"> Name</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="name" placeholder="Product Name" className="input input-bordered w-full" />
+                                <input type="text" name="name" placeholder="Product Name" defaultValue={name} className="input input-bordered w-full" />
                             </label>
                         </div>
                         <div className="form-control md:w-1/2">
@@ -66,7 +66,7 @@ const Form = () => {
                                 <span className="label-text">Brand Name</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="brandName" placeholder="Available Brand" className="input input-bordered w-full" />
+                                <input type="text" name="brandName" placeholder="Available Brand" defaultValue={brandName} className="input input-bordered w-full" />
                             </label>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ const Form = () => {
                                 <span className="label-text">Price</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="price" placeholder="Product price" className="input input-bordered w-full" />
+                                <input type="text" name="price" placeholder="Product price" defaultValue={price} className="input input-bordered w-full" />
                             </label>
                         </div>
                         <div className="form-control md:w-1/2">
@@ -84,7 +84,7 @@ const Form = () => {
                                 <span className="label-text">Rating</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="rating" placeholder=" rating" className="input input-bordered w-full" />
+                                <input type="text" name="rating" placeholder=" rating" defaultValue={rating} className="input input-bordered w-full" />
                             </label>
                         </div>
 
@@ -95,7 +95,7 @@ const Form = () => {
                                 <span className="label-text">type</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="type" placeholder="product type" className="input input-bordered w-full" />
+                                <input type="text" name="type" placeholder="product type" defaultValue={type} className="input input-bordered w-full" />
                             </label>
                         </div>
                         <div className="form-control md:w-1/2">
@@ -103,7 +103,7 @@ const Form = () => {
                                 <span className="label-text">Short description</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="details" placeholder="Coffee details" className="input input-bordered w-full" />
+                                <input type="text" name="details" placeholder="Coffee details" defaultValue={details} className="input input-bordered w-full" />
                             </label>
                         </div>
 
