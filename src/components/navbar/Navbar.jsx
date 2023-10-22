@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../provider/AuthProvider';
+import img1 from '../../assets/download.jpg'
 
 
 
@@ -30,7 +31,7 @@ const Navbar = () => {
                         {nav}
                     </ul>
                 </div>
-                <img className='w-10 h-10 rounded-full' src="/src/assets/download.jpg" alt="" />
+                <img className='w-10 h-10 rounded-full' src={img1} alt="" />
                 <a className="btn btn-ghost normal-case text-xl text-fuchsia-600">new<span className='text-orange-500'>Mua</span></a>
                 
             </div>

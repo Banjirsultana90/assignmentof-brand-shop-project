@@ -22,7 +22,7 @@ const Addproduct = () => {
         
         
      
-         fetch('http://localhost:5000/products',{
+         fetch('https://y-1lm0ucbjk-banjir-sultanas-projects.vercel.app/products',{
              method:'POST',
              headers:{
                "content-type":'application/json'

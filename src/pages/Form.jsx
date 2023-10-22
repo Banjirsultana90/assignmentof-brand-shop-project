@@ -20,7 +20,7 @@ const Form = () => {
         const details=form.details.value
       const newproduct={name,brandName,image,price,rating,type,details,}
     //   console.log(newproduct)
-         fetch(`http://localhost:5000/products/${_id}`,{
+         fetch(`https://y-1lm0ucbjk-banjir-sultanas-projects.vercel.app/${_id}`,{
              method:'PUT',
              headers:{
                "content-type":'application/json'

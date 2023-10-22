@@ -48,33 +48,33 @@ const router = createBrowserRouter([
     { 
       path:'/mycart',
       element:<Privateroute><Mycart></Mycart></Privateroute>,
-      loader:()=>fetch('http://localhost:5000/cart')
+      loader:()=>fetch('https://y-1lm0ucbjk-banjir-sultanas-projects.vercel.app/cart')
 
     },
     {
       path:'/update/:id',
-      element:<Form></Form>,
-      loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+      element:<Privateroute><Form></Form></Privateroute>,
+      loader:({params})=>fetch(`https://y-1lm0ucbjk-banjir-sultanas-projects.vercel.app/${params.id}`)
 
     },
     {
       path: '/products',
       element:<Products></Products>,
-      loader: () => fetch('http://localhost:5000/products')
+      loader: () => fetch('https://y-1lm0ucbjk-banjir-sultanas-projects.vercel.app/products')
     },
  {
  
   
     path: '/products/:brandName',
     element: <Allbrands></Allbrands>,
-    // loader: ({ params }) => fetch(`http://localhost:5000/products/${params.brandName}`)
+   
   
   
  },
  {
   path:'/product/:brandName/:_id',
   element:<Privateroute><Productdetails></Productdetails></Privateroute>,
-  loader: () => fetch('http://localhost:5000/products')
+  loader: () => fetch('https://y-1lm0ucbjk-banjir-sultanas-projects.vercel.app/products')
  }
     
     ]

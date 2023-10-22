@@ -13,7 +13,7 @@ const Productdetails = () => {
    const {brandName,name,image,type,price,rating,details}=product
     const mydata={brandName,name,image,type,price,rating,details}
 
-    fetch('http://localhost:5000/cart',{
+    fetch('https://y-1lm0ucbjk-banjir-sultanas-projects.vercel.app/cart',{
         method:'POST',
         headers:{
           "content-type":'application/json'

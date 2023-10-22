@@ -9,5 +9,5 @@
 
  ****Responsive Design :website is responsive and looks good on various devices, including desktops, tablets, and smartphones.
 
-[newMua](URL)
+[newMua](https://brand-shop-firebase-project.web.app/)
 
