@@ -112,11 +112,10 @@ const Addproduct = () => {
 
                     <input type="submit" value="Add Product" className="btn btn-block mt-3" />
                 </form>
-                {/* <button onClick={handleadd} className='btn'>Add Product</button> */}
-
-
+                
+                <Toaster />
             </div>
-            <Toaster />
+           
         </div>
     );
 };

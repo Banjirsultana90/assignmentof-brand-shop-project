@@ -7,12 +7,12 @@ const Category = () => {
 
 
     return (
-        <><h3 className='text-3xl'>Upcoming Products</h3><div className='flex gap-2 mx-auto '>
+        <><h3 className='text-3xl text-amber-500 font-bold'>Upcoming Products</h3><div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mb-3'>
             <div className="card w-96 bg-base-100 shadow-xl image-full">
                 <figure><img src={img2} alt="Shoes" /></figure>
                 <div className="card-body">
 
-                    <p>liquid foundation</p>
+                    <p className=' flex justify-center items-center text-2xl font-semibold'>liquid foundation</p>
 
                 </div>
             </div>
@@ -20,7 +20,7 @@ const Category = () => {
                 <figure><img src={img1} alt="Shoes" /></figure>
                 <div className="card-body">
 
-                    <p>Cleanser</p>
+                    <p className='flex justify-center items-center text-2xl'>Cleanser</p>
 
                 </div>
             </div>
@@ -28,7 +28,7 @@ const Category = () => {
                 <figure><img src={img3} alt="Shoes" /></figure>
                 <div className="card-body">
 
-                    <p>Matte lipprint</p>
+                    <p className='flex justify-center items-center text-2xl'>Matte lipprint</p>
 
                 </div>
             </div>
