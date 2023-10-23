@@ -32,7 +32,7 @@ const Login = () => {
                 });
         }
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero min-h-screen bg-base-200 overflow-x-hidden">
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <form ref={formRef} onSubmit={handlesubmit} className="card-body">
                 <div className="form-control">

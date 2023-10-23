@@ -4,7 +4,7 @@ import img1 from '../../assets/woman-getting-treatment-hairdresser-shop.jpg';
 
 const Testimony = () => {
   return (
-    <div className=" mt-3">
+    <div className=" mt-3 max-w-screen-xl  overflow-x-hidden">
       <h3 className="text-3xl text-amber-500 font-bold">Testimony</h3>
       <div className="bg-base-100 shadow-2xl rounded-xl mb-3 md:flex">
         <div className="w-full md:w-1/3">

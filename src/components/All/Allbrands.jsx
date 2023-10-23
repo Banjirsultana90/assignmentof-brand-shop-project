@@ -32,7 +32,7 @@ const Allbrands = () => {
     }, [brandName]);
 
     return (
-        <div >
+        <div className='max-w-screen-xl  overflow-x-hidden'>
             <div className='mb-5'>
                 <div className="carousel w-full h-72">
                     <div id="slide1" className="carousel-item relative w-full">

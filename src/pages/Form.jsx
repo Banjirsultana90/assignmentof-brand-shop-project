@@ -37,7 +37,7 @@ const Form = () => {
 
         }
     return (
-        <div>
+        <div className='max-h-screen  overflow-x-hidden'>
             <div className='bg-[#F4F3F0] p-24'>
 
                 <form onSubmit={handleupdate}>
