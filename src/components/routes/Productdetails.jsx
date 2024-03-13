@@ -1,7 +1,7 @@
 import React from 'react';
 import toast from 'react-hot-toast';
 
-import { useLoaderData, useParams } from 'react-router-dom';
+import { Link, useLoaderData, useParams } from 'react-router-dom';
 
 const Productdetails = () => {
   const products = useLoaderData();
@@ -13,7 +13,7 @@ const Productdetails = () => {
    const {brandName,name,image,type,price,rating,details}=product
     const mydata={brandName,name,image,type,price,rating,details}
 
-    fetch('https://y-1lm0ucbjk-banjir-sultanas-projects.vercel.app/cart',{
+    fetch('https://y-1ab3j0pc8-banjir-sultanas-projects.vercel.app/cart',{
         method:'POST',
         headers:{
           "content-type":'application/json'
@@ -23,7 +23,7 @@ const Productdetails = () => {
     .then(res=>res.json())
     .then(value=>{
         console.log(value)
-        toast.success("product added")
+        // toast.success("product added")
     })
     
   };
@@ -39,9 +39,10 @@ const Productdetails = () => {
             <h2 className="card-title text-blue-600 text-2xl font-extrabold">{product.name}</h2>
             <p>{product.details}</p>
           </div>
-          <button className="btn btn-secondary" onClick={handleAddToCart}>
+          {/* <button className="btn btn-secondary" onClick={handleAddToCart}>
             Add to Cart
-          </button>
+          </button> */}
+          <Link to ="/checkout"><button>Add to cart</button></Link>
         </div>
       ) : (
         <p>Loading...</p>

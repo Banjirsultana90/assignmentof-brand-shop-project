@@ -22,7 +22,7 @@ const Addproduct = () => {
         
         
      
-         fetch('https://y-1lm0ucbjk-banjir-sultanas-projects.vercel.app/products',{
+         fetch('https://y-1ab3j0pc8-banjir-sultanas-projects.vercel.app/products',{
              method:'POST',
              headers:{
                "content-type":'application/json'
@@ -47,7 +47,7 @@ const Addproduct = () => {
                                 <span className="label-text">Image</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="image" placeholder="image url" className="input input-bordered w-full" />
+                                <input type="text" name="image" placeholder="image url" className="input input-bordered w-full  "required />
                             </label>
                         </div>
 
@@ -58,7 +58,7 @@ const Addproduct = () => {
                                 <span className="label-text"> Name</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="name" placeholder="Product Name" className="input input-bordered w-full" />
+                                <input type="text" name="name" placeholder="Product Name" className="input input-bordered w-full" required />
                             </label>
                         </div>
                         <div className="form-control md:w-1/2">
@@ -66,7 +66,7 @@ const Addproduct = () => {
                                 <span className="label-text">Brand Name</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="brandName" placeholder="Available Brand" className="input input-bordered w-full" />
+                                <input type="text" name="brandName" placeholder="Available Brand" className="input input-bordered w-full" required />
                             </label>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ const Addproduct = () => {
                                 <span className="label-text">Price</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="price" placeholder="Product price" className="input input-bordered w-full" />
+                                <input type="text" name="price" placeholder="Product price" className="input input-bordered w-full"required />
                             </label>
                         </div>
                         <div className="form-control md:w-1/2">
@@ -84,7 +84,7 @@ const Addproduct = () => {
                                 <span className="label-text">Rating</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="rating" placeholder=" rating" className="input input-bordered w-full" />
+                                <input type="text" name="rating" placeholder=" rating" className="input input-bordered w-full" required />
                             </label>
                         </div>
 
@@ -95,7 +95,7 @@ const Addproduct = () => {
                                 <span className="label-text">Type</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="type" placeholder="product type" className="input input-bordered w-full" />
+                                <input type="text" name="type" placeholder="product type" className="input input-bordered w-full" required />
                             </label>
                         </div>
                         <div className="form-control md:w-1/2">
@@ -103,7 +103,7 @@ const Addproduct = () => {
                                 <span className="label-text">Short description</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="details" placeholder="product details" className="input input-bordered w-full" />
+                                <input type="text" name="details" placeholder="product details" className="input input-bordered w-full"  required />
                             </label>
                         </div>
 
@@ -111,6 +111,7 @@ const Addproduct = () => {
                     
 
                     <input type="submit" value="Add Product" className="btn btn-block mt-3" />
+                    <input type="submit" value="Update Product" className="btn btn-block mt-3" />
                 </form>
                 
                 <Toaster />

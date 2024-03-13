@@ -14,7 +14,7 @@ const Allbrands = () => {
     const [noProducts, setNoProducts] = useState(false);
 
     useEffect(() => {
-        fetch(`https://y-1lm0ucbjk-banjir-sultanas-projects.vercel.app/products/`)
+        fetch(`https://y-1ab3j0pc8-banjir-sultanas-projects.vercel.app/products/`)
             .then((response) => response.json())
             .then((data) => {
 
@@ -81,11 +81,12 @@ const Allbrands = () => {
                 </div>
             </div>
             <h3 className='text-3xl font-bold' >Prducts for:{brandName}</h3>
-            {noProducts ? (
+            {noProducts ? 
                 <p className='text-5xl pt-10 py-5  text-red-500'>No available products for{brandName}!!!!</p>
-            ) : (
+             : 
                 <ul className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'>
-                    {products.map((product) => (
+                    {/* brandName!=="Revlon" && */}
+                    { products.map((product) => (
                         <li key={product._id}>
                             <div className="card card-compact w-80 bg-red-50 shadow-xl">
                                 <figure>
@@ -114,7 +115,7 @@ const Allbrands = () => {
                         </li>
                     ))}
                 </ul>
-            )}
+            }
         </div>
     );
 };

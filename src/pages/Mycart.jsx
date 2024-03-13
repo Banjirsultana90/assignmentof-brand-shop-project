@@ -6,7 +6,7 @@ const Mycart = () => {
     const loadeduser = useLoaderData()
     const[user, setuser]=useState(loadeduser)
     const handledelete=id=>{
-        fetch(`https://y-1lm0ucbjk-banjir-sultanas-projects.vercel.app/cart/${id}`,{
+        fetch(`https://y-1ab3j0pc8-banjir-sultanas-projects.vercel.app/cart/${id}`,{
             method: "DELETE"
         })
         .then((res)=>res.json())

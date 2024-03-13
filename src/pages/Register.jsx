@@ -1,10 +1,11 @@
 import React, { useContext, useRef } from 'react';
 import {AuthContext} from '../components/provider/AuthProvider'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import toast, { Toaster } from 'react-hot-toast';
 import Sociallogin from './Sociallogin';
 
 const Register = () => {
+    const navigate = useNavigate();
     const { createuser ,handleupdateprofile} = useContext(AuthContext);
     const formRef = useRef(null);
     const handleregister = (e) => {
@@ -24,6 +25,7 @@ const Register = () => {
             .then((result) => {
                 handleupdateprofile(name,photo)
                 .then(()=>{
+                    navigate ('/login')
                     toast.success('Registration successful!');
                 })
                 
@@ -36,7 +38,7 @@ const Register = () => {
             });
     }
     return (
-        <div className="hero mx-auto min-h-screen bg-base-200 overflow-x-hidden">
+        <div className="hero min-h-screen bg-base-200 overflow-x-hidden">
             <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                 <form ref={formRef} onSubmit={handleregister} className="card-body">
                     <div className="form-control">

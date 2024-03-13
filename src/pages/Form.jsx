@@ -7,7 +7,9 @@ const Form = () => {
     const {id}=useParams()
     // console.log(id)
     console.log(product);
-    const {_id,brandName,name,image,type,price,rating,details}=product
+    const {_id,brandName,name,image,type,price,rating
+    
+    }=product
     const handleupdate= event => {
         event.preventDefault();
         const form =event.target
@@ -17,10 +19,10 @@ const Form = () => {
         const price=form.price.value
         const rating=form.rating.value
         const type=form.type.value
-        const details=form.details.value
-      const newproduct={name,brandName,image,price,rating,type,details,}
+      
+      const newproduct={name,brandName,image,price,rating,type}
     //   console.log(newproduct)
-         fetch(`https://y-1lm0ucbjk-banjir-sultanas-projects.vercel.app/${_id}`,{
+         fetch(`https://y-1ab3j0pc8-banjir-sultanas-projects.vercel.app/${_id}`,{
              method:'PUT',
              headers:{
                "content-type":'application/json'

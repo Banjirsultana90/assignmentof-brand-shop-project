@@ -21,6 +21,9 @@ import AuthProvider from './components/provider/AuthProvider.jsx';
 import Mycart from './pages/Mycart.jsx';
 import Form from './pages/Form.jsx';
 import { Toaster } from 'react-hot-toast';
+import Contact from './components/footer/Contact.jsx';
+import Checkout from './components/routes/Checkout.jsx';
+import Success from './components/routes/Success.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +32,10 @@ const router = createBrowserRouter([
     children: [{
       path: '/',
       element: <Home></Home>
+
+    },
+    {path:'/contact',
+    element:<Contact></Contact>
 
     },
 
@@ -48,19 +55,19 @@ const router = createBrowserRouter([
     { 
       path:'/mycart',
       element:<Privateroute><Mycart></Mycart></Privateroute>,
-      loader:()=>fetch('https://y-1lm0ucbjk-banjir-sultanas-projects.vercel.app/cart')
+      loader:()=>fetch('https://y-1ab3j0pc8-banjir-sultanas-projects.vercel.app/cart')
 
     },
     {
       path:'/update/:id',
       element:<Privateroute><Form></Form></Privateroute>,
-      loader:({params})=>fetch(`https://y-1lm0ucbjk-banjir-sultanas-projects.vercel.app/${params.id}`)
+      loader:({params})=>fetch(`https://y-1ab3j0pc8-banjir-sultanas-projects.vercel.app/${params.id}`)
 
     },
     {
       path: '/products',
       element:<Products></Products>,
-      loader: () => fetch('https://y-1lm0ucbjk-banjir-sultanas-projects.vercel.app/products')
+      loader: () => fetch('https://y-1ab3j0pc8-banjir-sultanas-projects.vercel.app/products')
     },
  {
  
@@ -72,9 +79,17 @@ const router = createBrowserRouter([
   
  },
  {
+  path: "/checkout",
+  element: <Checkout></Checkout>,
+},
+{
+  path: "/payment/success/:tranId",
+  element: <Success></Success>,
+},
+ {
   path:'/product/:brandName/:_id',
   element:<Privateroute><Productdetails></Productdetails></Privateroute>,
-  loader: () => fetch('https://y-1lm0ucbjk-banjir-sultanas-projects.vercel.app/products')
+  loader: () => fetch('https://y-1ab3j0pc8-banjir-sultanas-projects.vercel.app/products')
  }
     
     ]
