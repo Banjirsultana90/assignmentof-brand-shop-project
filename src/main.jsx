@@ -55,19 +55,19 @@ const router = createBrowserRouter([
     { 
       path:'/mycart',
       element:<Privateroute><Mycart></Mycart></Privateroute>,
-      loader:()=>fetch('https://y-1ab3j0pc8-banjir-sultanas-projects.vercel.app/cart')
+      loader:()=>fetch('https://brand-shop-server-mauve-nu.vercel.app/cart')
 
     },
     {
       path:'/update/:id',
       element:<Privateroute><Form></Form></Privateroute>,
-      loader:({params})=>fetch(`https://y-1ab3j0pc8-banjir-sultanas-projects.vercel.app/${params.id}`)
+      loader:({params})=>fetch(`https://brand-shop-server-mauve-nu.vercel.app/${params.id}`)
 
     },
     {
       path: '/products',
       element:<Products></Products>,
-      loader: () => fetch('https://y-1ab3j0pc8-banjir-sultanas-projects.vercel.app/products')
+      loader: () => fetch('https://brand-shop-server-mauve-nu.vercel.app/products')
     },
  {
  
@@ -89,7 +89,7 @@ const router = createBrowserRouter([
  {
   path:'/product/:brandName/:_id',
   element:<Privateroute><Productdetails></Productdetails></Privateroute>,
-  loader: () => fetch('https://y-1ab3j0pc8-banjir-sultanas-projects.vercel.app/products')
+  loader: () => fetch('https://brand-shop-server-mauve-nu.vercel.app/products')
  }
     
     ]

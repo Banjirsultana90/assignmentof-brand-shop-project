@@ -22,7 +22,7 @@ const Form = () => {
       
       const newproduct={name,brandName,image,price,rating,type}
     //   console.log(newproduct)
-         fetch(`https://y-1ab3j0pc8-banjir-sultanas-projects.vercel.app/${_id}`,{
+         fetch(`https://brand-shop-server-mauve-nu.vercel.app/${_id}`,{
              method:'PUT',
              headers:{
                "content-type":'application/json'

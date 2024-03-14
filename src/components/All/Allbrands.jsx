@@ -14,7 +14,7 @@ const Allbrands = () => {
     const [noProducts, setNoProducts] = useState(false);
 
     useEffect(() => {
-        fetch(`https://y-1ab3j0pc8-banjir-sultanas-projects.vercel.app/products/`)
+        fetch(`https://brand-shop-server-mauve-nu.vercel.app/products/`)
             .then((response) => response.json())
             .then((data) => {
 

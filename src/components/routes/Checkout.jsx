@@ -34,7 +34,7 @@ const Checkout = () => {
     console.log(product);
     // https://y-1lm0ucbjk-banjir-sultanas-projects.vercel.app
 
-    fetch(`https://y-1ab3j0pc8-banjir-sultanas-projects.vercel.app/orders/${id}`, {
+    fetch(`https://brand-shop-server-mauve-nu.vercel.app/orders/${id}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
