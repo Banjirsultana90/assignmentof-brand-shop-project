@@ -55,19 +55,20 @@ const router = createBrowserRouter([
     { 
       path:'/mycart',
       element:<Privateroute><Mycart></Mycart></Privateroute>,
-      loader:()=>fetch('https://brand-shop-server-mauve-nu.vercel.app/cart')
+      loader:()=>fetch('http://localhost:5000/cart')
 
     },
     {
       path:'/update/:id',
       element:<Privateroute><Form></Form></Privateroute>,
-      loader:({params})=>fetch(`https://brand-shop-server-mauve-nu.vercel.app/${params.id}`)
+      loader:({params})=>fetch(`http://localhost:5000/${params.id}`)
 
     },
+    // https://brand-shop-server-mauve-nu.vercel.app
     {
       path: '/products',
       element:<Products></Products>,
-      loader: () => fetch('https://brand-shop-server-mauve-nu.vercel.app/products')
+      loader: () => fetch('http://localhost:5000/products')
     },
  {
  
@@ -89,7 +90,7 @@ const router = createBrowserRouter([
  {
   path:'/product/:brandName/:_id',
   element:<Privateroute><Productdetails></Productdetails></Privateroute>,
-  loader: () => fetch('https://brand-shop-server-mauve-nu.vercel.app/products')
+  loader: () => fetch('http://localhost:5000/products')
  }
     
     ]

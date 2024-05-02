@@ -13,7 +13,7 @@ const Productdetails = () => {
    const {brandName,name,image,type,price,rating,details}=product
     const mydata={brandName,name,image,type,price,rating,details}
 
-    fetch('https://brand-shop-server-mauve-nu.vercel.app/cart',{
+    fetch('http://localhost:5000/cart',{
         method:'POST',
         headers:{
           "content-type":'application/json'

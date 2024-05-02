@@ -9,6 +9,16 @@ const nav = <><li><NavLink to='/'>Home</NavLink></li>
     <li><NavLink to='/addproduct'>Add Product</NavLink></li>
     <li> <NavLink to='/mycart'>My Cart</NavLink></li>
     {/* <li><NavLink to='/login'>Login</NavLink></li> */}
+    <div tabIndex={0} className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
+        <div className="card-body">
+          <span className="font-bold text-lg">8 Items</span>
+          <span className="text-info">Subtotal: $999</span>
+          <div className="card-actions">
+            <button className="btn btn-primary btn-block">View cart</button>
+          </div>
+        </div>
+      </div>
+    
     </>
 
 

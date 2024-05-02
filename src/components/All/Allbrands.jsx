@@ -14,7 +14,7 @@ const Allbrands = () => {
     const [noProducts, setNoProducts] = useState(false);
 
     useEffect(() => {
-        fetch(`https://brand-shop-server-mauve-nu.vercel.app/products/`)
+        fetch(`http://localhost:5000/products/`)
             .then((response) => response.json())
             .then((data) => {
 
